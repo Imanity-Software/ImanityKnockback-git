@@ -38,6 +38,14 @@ body:
         note that *LATEST* is not a version.
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: Spigot information
+      description: |
+        We need to know what spigot do you run with ImanityKnockback.
+        Please also provide the version using /ver command in the server.
+    validations:
+      required: true
 
   - type: checkboxes
     attributes:

@@ -1,5 +1,5 @@
 name: (English) Behavior Bug or Plugin Incompatibility
-description: Report issues with plugin incompatbility or other behavior related issues.
+description: Report issues with plugin incompatibility or other behavior related issues.
 body:
   - type: markdown
     attributes:
@@ -36,6 +36,14 @@ body:
       description: |
         Type `/ver ImanityKnockback` in your server to get your current version.
         note that *LATEST* is not a version.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Spigot information
+      description: |
+        We need to know what spigot do you run with ImanityKnockback.
+        Please also provide the version using /ver command in the server.
     validations:
       required: true
 
