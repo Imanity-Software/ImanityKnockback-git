@@ -34,7 +34,7 @@ body:
     attributes:
       label: ImanityKnockback version
       description: |
-        **TODO**
+        Type `/ver ImanityKnockback` in your server to get your current version.
         note that *LATEST* is not a version.
     validations:
       required: true
