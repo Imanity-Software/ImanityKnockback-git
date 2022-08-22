@@ -1,0 +1,44 @@
+name: (中文) 功能建議
+description: 給予 ImanityKnockback 一些新功能要求或建議
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝你提供 ImanityKnockback 建議！為了能盡速讓開發人員理解並審核你的要求，請盡可能給予夠多的細節。
+        不過在填寫之前，請在 Issues 中查看是否有人已經提出過類似的建議。如果有的話，請直接在該Issues下方說明，而不是填寫一個新的建議。
+        在申請新功能或提出建議之前，請確保你使用的是最新的版本，並且你所要求的功能還沒有在ImanityKnockback中出現。
+  - type: textarea
+    attributes:
+      label: 你的建議是否與一個問題有關？
+      description: 請為這個建議提供一些資訊。為什麼你想要添加這個功能？
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 說明你的建議
+      description: 對你想要的內容進行清晰簡潔的描述。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 你是否有想過其他的解決方法？
+      description: 如果有的話，請告訴我們你嘗試過哪些方法。
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: 同意事項
+      description: 請同意以下內容.
+      options:
+        - label: 我已經搜尋過問題跟踪器並確保沒有發現類似的建議
+          required: true
+        - label: 我已確保我請求的功能不在最新版本的 ImanityKnockback 中
+          required: true
+
+  - type: textarea
+    attributes:
+      label: 額外資訊
+      description: 如果有的話，請盡可能提供更多的資訊
+    validations:
+      required: false
