@@ -8,37 +8,42 @@ body:
         不過在填寫之前，請在 Issues 中查看是否有人已經提出過類似的建議。如果有的話，請直接在該Issues下方說明，而不是填寫一個新的建議。
         在申請新功能或提出建議之前，請確保你使用的是最新的版本，並且你所要求的功能還沒有在ImanityKnockback中出現。
   - type: textarea
+    id: related
     attributes:
-      label: 你的建議是否與一個問題有關？
-      description: 請為這個建議提供一些資訊。為什麼你想要添加這個功能？
+      label: "你的建議是否與一個問題有關？"
+      description: "請為這個建議提供一些資訊。為什麼你想要添加這個功能？"
     validations:
       required: true
   - type: textarea
+    id: description
     attributes:
-      label: 說明你的建議
-      description: 對你想要的內容進行清晰簡潔的描述。
+      label: "說明你的建議"
+      description: "對你想要的內容進行清晰簡潔的描述。"
     validations:
       required: true
   - type: textarea
+    id: alternative
     attributes:
-      label: 你是否有想過其他的解決方法？
-      description: 如果有的話，請告訴我們你嘗試過哪些方法。
+      label: "你是否有想過其他的解決方法？"
+      description: "如果有的話，請告訴我們你嘗試過哪些方法。"
     validations:
       required: true
 
   - type: checkboxes
+    id: agreements
     attributes:
-      label: 同意事項
-      description: 請同意以下內容.
+      label: "同意事項"
+      description: "請同意以下內容"
       options:
-        - label: 我已經搜尋過問題跟踪器並確保沒有發現類似的建議
+        - label: "我已經搜尋過問題跟踪器並確保沒有發現類似的建議"
           required: true
-        - label: 我已確保我請求的功能不在最新版本的 ImanityKnockback 中
+        - label: "我已確保我請求的功能不在最新版本的 ImanityKnockback 中"
           required: true
 
   - type: textarea
+    id: other
     attributes:
-      label: 額外資訊
-      description: 如果有的話，請盡可能提供更多的資訊
+      label: "額外資訊"
+      description: "如果有的話，請盡可能提供更多的資訊"
     validations:
       required: false

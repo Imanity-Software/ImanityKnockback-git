@@ -6,8 +6,9 @@ body:
       value: |
         在此處回報伺服器崩潰或堆棧跟踪之前，請確保您使用的是最新版本的 ImanityKnockback。
   - type: textarea
+    id: stacktrace
     attributes:
-      label: Stacktrace 堆疊追蹤
+      label: "Stacktrace 堆疊追蹤"
       description: |
         我們需要完整的堆疊追蹤串！請不要剪到任何一個部分！也不要直接給我們檔案！
         你也可以選擇將堆疊追蹤傳到 https://paste.imanity.dev/ 或任何類似的平台
@@ -15,51 +16,57 @@ body:
         ```
         請貼上你的堆疊追蹤或是貼到 https://paste.imanity.dev/ 網站上!
         ```
-      placeholder: 請不要移除反引號！否則堆疊追蹤會更難閱讀！
+      placeholder: "請不要移除反引號！否則堆疊追蹤會更難閱讀！"
     validations:
       required: true
   - type: textarea
+    id: plugins
     attributes:
-      label: 插件列表
-      description: 你的伺服器上運行的所有插件
+      label: "插件列表"
+      description: "你的伺服器上運行的所有插件"
     validations:
       required: true
   - type: textarea
+    id: reproduce
     attributes:
-      label: 重現的方式 (如果知道的話)
-      description: 這可能包括一個示意圖，影片或詳細的說明，以幫助重現這個問題。任何東西都有幫助！
+      label: "重現的方式 (如果知道的話)"
+      description: "這可能包括一個示意圖，影片或詳細的說明，以幫助重現這個問題。任何東西都有幫助！"
     validations:
       required: false
   - type: textarea
+    id: version
     attributes:
-      label: ImanityKnockback 的版本
+      label: "ImanityKnockback 的版本"
       description: |
         請在你的伺服器中輸入 `/ver Imanity Knockback` 來獲得你當前的版本。
         請注意 *「最新版」* 並不是一個版本，請提供一個完整的版本號碼！
     validations:
       required: true
   - type: textarea
+    id: spigot-info
     attributes:
-      label: Spigot 資訊
+      label: "Spigot 資訊"
       description: |
         我們需要知道你在 ImanityKnockback 上運行的是什麼 Spigot。
-        還請在伺服器中輸入 `/ver` 提供版本。
+        請在伺服器中輸入 `/ver` 提供版本。
     validations:
       required: true
 
   - type: checkboxes
+    id: agreements
     attributes:
-      label: 同意事項
-      description: 請同意以下內容
+      label: "同意事項"
+      description: "請同意以下內容"
       options:
-        - label: 我正在運行我們 Discord 中 `#imanityKnockback` 頻道提供的最新版本 ImanityKnockback
+        - label: "我正在運行我們 Discord 中 `#imanityKnockback` 頻道提供的最新版本 ImanityKnockback"
           required: true
-        - label: 我已經搜尋過問題跟踪器並確保沒有發現類似的問題
+        - label: "我已經搜尋過問題跟踪器並確保沒有發現類似的問題"
           required: true
 
   - type: textarea
+    id: other
     attributes:
-      label: 額外資訊
+      label: "額外資訊"
       description: |
         請在下方附上其他有用的資訊。
         我們收到的資訊越多，我們就能更快、更有效地找到問題的解決方案。
