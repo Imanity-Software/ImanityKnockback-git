@@ -59,7 +59,7 @@ body:
       label: "同意事項"
       description: "請同意以下內容"
       options:
-        - label: "我正在運行我們 Discord 中 `#imanityKnockback` 頻道提供的最新版本 ImanityKnockback"
+        - label: "我正在運行 Discord 頻道 `#imanityKnockback` 中提供的最新版本 ImanityKnockback"
           required: true
         - label: "我已經搜尋過問題跟踪器並確保沒有發現類似的問題"
           required: true
