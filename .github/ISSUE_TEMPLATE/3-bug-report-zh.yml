@@ -7,30 +7,35 @@ body:
         在你回報問題之前，請確定你目前運行的是最新版的 ImanityKnockback！
 
   - type: textarea
+    id: expected-behavior
     attributes:
       label: "預期狀況"
       description: "你期望應該要看到什麼？"
     validations:
       required: true
   - type: textarea
+    id: actual-behavior
     attributes:
       label: "實際狀況"
       description: "你實際上看到了什麼？"
     validations:
       required: true
   - type: textarea
+    id: steps
     attributes:
       label: "重現的方式"
       description: "可以是一張示意圖、影片或是詳細的說明以幫助重現你回報的問題"
     validations:
       required: true
   - type: textarea
+    id: plugins
     attributes:
       label: "插件列表"
       description: "你的伺服器上運行的所有插件"
     validations:
       required: true
   - type: textarea
+    id: version
     attributes:
       label: 'ImanityKnockback 的版本'
       description: |
@@ -39,6 +44,7 @@ body:
     validations:
       required: true
   - type: textarea
+    id: spigot-info
     attributes:
       label: "Spigot 資訊"
       description: |
@@ -48,6 +54,7 @@ body:
       required: true
 
   - type: checkboxes
+    id: agreements
     attributes:
       label: "同意事項"
       description: "請同意以下內容"
@@ -58,6 +65,7 @@ body:
           required: true
 
   - type: textarea
+    id: other
     attributes:
       label: "額外資訊"
       description: |
